@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Mr. Barber</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/book-appointment.css">
+</head>
+<body>
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+  <aside class="sidebar"></aside>
+  
+  <div class="main-content">
+    <div class="content-wrapper">
+      <h1 class="page-title">Book Your Appointment</h1>
+      <p class="page-subtitle">Select your preferred service, barber, and time slot</p>
+
+      <!-- Progress Steps -->
+      <div class="steps-container">
+        <div class="step completed">
+          <div class="step-circle">1</div>
+          <span>Select Service</span>
+        </div>
+        <div class="step-line completed"></div>
+        <div class="step">
+          <div class="step-circle">2</div>
+          <span>Choose Barber</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <div class="step-circle">3</div>
+          <span>Date & Time</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+          <div class="step-circle">4</div>
+          <span>Confirm</span>
+        </div>
+      </div>
+
+      <div class="booking-grid">
+        <!-- Left Column -->
+        <div class="booking-main">
+          <!-- Select Service -->
+          <div class="section">
+            <h2 class="section-title">Select Service</h2>
+            <div class="service-cards">
+              <div class="service-card selected">
+                <div class="service-check">✓</div>
+                <div class="service-icon">✂</div>
+                <h3>Classic Haircut</h3>
+                <p>Traditional cut & style</p>
+                <div class="service-details">
+                  <span class="service-price">$35</span>
+                  <span class="service-duration">45 min</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">🧔</div>
+                <h3>Beard Trim</h3>
+                <p>Shape & grooming</p>
+                <div class="service-details">
+                  <span class="service-price">$25</span>
+                  <span class="service-duration">30 min</span>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">💇</div>
+                <h3>Hair Styling</h3>
+                <p>Premium styling</p>
+                <div class="service-details">
+                  <span class="service-price">$45</span>
+                  <span class="service-duration">60 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Choose Barber -->
+          <div class="section">
+            <h2 class="section-title">Choose Your Barber</h2>
+            <div class="barber-cards">
+              <div class="barber-card selected">
+                <div class="barber-avatar">MJ</div>
+                <h3>Mike Johnson</h3>
+                <div class="barber-rating">★ 4.9</div>
+                <p>8 years exp.</p>
+              </div>
+              <div class="barber-card">
+                <div class="barber-avatar">DS</div>
+                <h3>David Smith</h3>
+                <div class="barber-rating">★ 4.8</div>
+                <p>5 years exp.</p>
+              </div>
+              <div class="barber-card">
+                <div class="barber-avatar">AB</div>
+                <h3>Alex Brown</h3>
+                <div class="barber-rating">★ 4.7</div>
+                <p>6 years exp.</p>
+              </div>
+              <div class="barber-card">
+                <div class="barber-avatar">RC</div>
+                <h3>Ryan Clark</h3>
+                <div class="barber-rating">★ 4.9</div>
+                <p>10 years exp.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Date -->
+          <div class="section">
+            <h2 class="section-title">Select Date</h2>
+            <div class="calendar">
+              <div class="calendar-header">
+                <button class="calendar-nav">‹</button>
+                <h3>December 2024</h3>
+                <button class="calendar-nav">›</button>
+              </div>
+              <div class="calendar-weekdays">
+                <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+              </div>
+              <div class="calendar-days">
+                <div class="calendar-day disabled">28</div>
+                <div class="calendar-day disabled">29</div>
+                <div class="calendar-day disabled">30</div>
+                <div class="calendar-day disabled">31</div>
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day">4</div>
+                <div class="calendar-day">5</div>
+                <div class="calendar-day">6</div>
+                <div class="calendar-day">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day selected">12</div>
+                <div class="calendar-day">13</div>
+                <div class="calendar-day">14</div>
+                <div class="calendar-day">15</div>
+                <div class="calendar-day">16</div>
+                <div class="calendar-day">17</div>
+                <div class="calendar-day">18</div>
+                <div class="calendar-day">19</div>
+                <div class="calendar-day">20</div>
+                <div class="calendar-day">21</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Time -->
+          <div class="section">
+            <h2 class="section-title">Select Time</h2>
+            <div class="time-slots">
+              <button class="time-slot">09:00 AM</button>
+              <button class="time-slot">09:30 AM</button>
+              <button class="time-slot">10:00 AM</button>
+              <button class="time-slot">10:30 AM</button>
+              <button class="time-slot">11:00 AM</button>
+              <button class="time-slot">11:30 AM</button>
+              <button class="time-slot disabled">12:00 PM</button>
+              <button class="time-slot disabled">12:30 PM</button>
+              <button class="time-slot disabled">01:00 PM</button>
+              <button class="time-slot selected">02:00 PM</button>
+              <button class="time-slot">02:30 PM</button>
+              <button class="time-slot">03:00 PM</button>
+              <button class="time-slot">04:00 PM</button>
+              <button class="time-slot">04:30 PM</button>
+              <button class="time-slot">05:00 PM</button>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="section">
+            <h2 class="section-title">Additional Notes (Optional)</h2>
+            <textarea class="form-textarea" placeholder="Any special requests or preferences..."></textarea>
+          </div>
+        </div>
+
+        <!-- Right Column - Booking Summary -->
+        <div class="booking-sidebar">
+          <div class="card">
+            <div class="summary-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <h2 class="section-title">Booking Summary</h2>
+            </div>
+            <div class="summary-content">
+              <div class="summary-item">
+                <span class="summary-label">Service:</span>
+                <span class="summary-value">Classic Haircut</span>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label">Barber:</span>
+                <span class="summary-value">Mike Johnson</span>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label">Date:</span>
+                <span class="summary-value">December 12, 2024</span>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label">Time:</span>
+                <span class="summary-value">02:00 PM</span>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label">Duration:</span>
+                <span class="summary-value">45 minutes</span>
+              </div>
+              <div class="summary-total">
+                <span class="summary-label">Total:</span>
+                <span class="summary-value total-price">$35.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Back
+        </button>
+        <button class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          Cancel
+        </button>
+        <button class="btn btn-primary" id="confirm-booking-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Confirm Booking
+        </button>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/book-appointment.js"></script>
+</body>
+</html>
+

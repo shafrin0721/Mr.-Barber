@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Book Appointment - Mr. Barber Wireframes</title>
+<link rel="stylesheet" href="wireframe-styles.css">
+</head>
+<body>
+
+<div class="container">
+  <nav class="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="logo">✂️ Mr. Barber</div>
+    <div class="menu">
+      <a href="wireframe-dashboard.html">Dashboard</a>
+      <a href="wireframe-book.html" class="active">Book Appointment</a>
+      <a href="wireframe-queue.html">Queue Status</a>
+      <a href="wireframe-barbers.html">Barbers</a>
+      <a href="wireframe-feedback.html">Feedback</a>
+      <a href="wireframe-payment.html">Payment</a>
+      <a href="wireframe-rewards.html">Loyalty Rewards</a>
+    </div>
+    <div class="profile">
+      John Anderson<br/>
+      <span class="email">john@email.com</span>
+    </div>
+  </nav>
+
+  <main>
+    <header>Book Your Appointment</header>
+    <section style="max-width: 900px; margin: auto;">
+      <h3>1. Select Service</h3>
+      <div style="display:flex; gap: 10px; margin-bottom:1rem;">
+        <div style="flex:1; border: 1px solid #bbb; border-radius: 8px; padding: 10px; background: #f9f7e6; box-shadow:0 0 8px #ccb;">
+          <div>✂️ Classic Haircut</div>
+          <div>Traditional cut & style</div>
+          <div><strong>$35</strong> | 45 min</div>
+        </div>
+        <div style="flex:1; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+          <div>🧔 Beard Trim</div>
+          <div>Shape & grooming</div>
+          <div><strong>$25</strong> | 30 min</div>
+        </div>
+        <div style="flex:1; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+          <div>💇 Hair Styling</div>
+          <div>Premium styling</div>
+          <div><strong>$45</strong> | 60 min</div>
+        </div>
+      </div>
+      <h3>2. Choose Your Barber</h3>
+      <div style="display:flex; gap:10px; margin-bottom:1rem; justify-content: space-between; flex-wrap: wrap;">
+        <div style="flex:1 1 120px; border: 1px solid #ccc; border-radius:8px; padding:10px; text-align:center;">
+          <div style="height:64px; width:64px; background:#778899; border-radius:50%; margin:0 auto 10px;"></div>
+          <div>Mike Johnson</div>
+          <div>★ 4.9</div>
+          <div>8 years exp.</div>
+        </div>
+        <div style="flex:1 1 120px; border: 1px solid #ccc; border-radius:8px; padding:10px; text-align:center;">
+          <div style="height:64px; width:64px; background:#778899; border-radius:50%; margin:0 auto 10px;"></div>
+          <div>David Smith</div>
+          <div>★ 4.8</div>
+          <div>5 years exp.</div>
+        </div>
+        <div style="flex:1 1 120px; border: 1px solid #ccc; border-radius:8px; padding:10px; text-align:center;">
+          <div style="height:64px; width:64px; background:#778899; border-radius:50%; margin:0 auto 10px;"></div>
+          <div>Alex Brown</div>
+          <div>★ 4.7</div>
+          <div>6 years exp.</div>
+        </div>
+        <div style="flex:1 1 120px; border: 1px solid #ccc; border-radius:8px; padding:10px; text-align:center;">
+          <div style="height:64px; width:64px; background:#778899; border-radius:50%; margin:0 auto 10px;"></div>
+          <div>Ryan Clark</div>
+          <div>★ 4.9</div>
+          <div>10 years exp.</div>
+        </div>
+      </div>
+      <h3>3. Select Date</h3>
+      <input type="date" style="width:150px; padding:5px 10px; margin-bottom: 1rem;" />
+      <h3>4. Select Time</h3>
+      <div style="display:flex; flex-wrap: wrap; gap: 8px; margin-bottom:1rem;">
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">09:00 AM</button>
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">09:30 AM</button>
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">10:00 AM</button>
+        <button disabled style="padding: 6px 12px; border: 1px solid #ddd; border-radius: 5px; color:#bbb; cursor:not-allowed;">11:30 AM</button>
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">02:00 PM</button>
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">02:30 PM</button>
+        <button style="padding: 6px 12px; border: 1px solid #aaa; border-radius: 5px;">03:00 PM</button>
+      </div>
+      <h3>Additional Notes (Optional)</h3>
+      <textarea rows="3" style="width:100%; padding:8px; margin-bottom:1rem;" placeholder="Any special requests or preferences..."></textarea>
+      <h3>Booking Summary</h3>
+      <p>Service: Classic Haircut</p>
+      <p>Barber: Mike Johnson</p>
+      <p>Date: December 12, 2024</p>
+      <p>Time: 02:00 PM</p>
+      <p>Duration: 45 minutes</p>
+      <p><strong>Total: $35.00</strong></p>
+      <div style="margin-top:1rem;">
+        <button style="margin-right:10px; padding: 8px 15px;">Back</button>
+        <button style="margin-right:10px; padding: 8px 15px;">Cancel</button>
+        <button style="background: #453b2a; color: white; padding: 8px 15px; box-shadow: 0 4px 7px #aa945f;">Confirm Booking</button>
+      </div>
+    </section>
+    <footer role="contentinfo">
+      <div class="footer-section">
+        <div>
+          <h4>Mr. Barber</h4>
+          <p>Connect with the best barbers in your area and book your perfect cut.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul><li>Hair Cuts</li><li>Beard Styling</li><li>Straight Razor</li><li>Hot Towel</li></ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul><li>Help Center</li><li>Contact Us</li><li>Privacy Policy</li><li>Terms of Service</li></ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul><li>Facebook</li><li>Instagram</li><li>Twitter</li></ul>
+        </div>
+      </div>
+      <div>© 2024 Mr. Barber. All rights reserved.</div>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
+

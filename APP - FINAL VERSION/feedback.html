@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Mr. Barber</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+  <aside class="sidebar"></aside>
+  
+  <div class="main-content">
+    <div class="content-wrapper">
+      <!-- Feedback Header -->
+      <div class="feedback-header">
+        <div class="feedback-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <h1>We Value Your Feedback</h1>
+        <p>Your opinion helps us improve our service and create better experiences for everyone.</p>
+      </div>
+
+      <!-- Rating Section -->
+      <div class="section">
+        <h2 class="section-title">How would you rate your experience?</h2>
+        <div class="rating-container">
+          <span class="rating-label">Poor</span>
+          <div class="stars-container">
+            <span class="star" onclick="setRating(1)">★</span>
+            <span class="star" onclick="setRating(2)">★</span>
+            <span class="star" onclick="setRating(3)">★</span>
+            <span class="star" onclick="setRating(4)">★</span>
+            <span class="star" onclick="setRating(5)">★</span>
+          </div>
+          <span class="rating-label">Excellent</span>
+        </div>
+      </div>
+
+      <!-- Feedback Form -->
+      <div class="section">
+        <h2 class="section-title">Tell us more about your experience (Optional)</h2>
+        <textarea id="feedback-text" class="form-textarea feedback-textarea" placeholder="Share your thoughts, suggestions, or any specific feedback that could help us improve..." maxlength="500"></textarea>
+        <div class="feedback-footer">
+          <p class="feedback-note">Your feedback is anonymous and helps us serve you better</p>
+          <span id="char-counter" class="char-counter">0/500</span>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="section">
+        <button class="btn btn-feedback">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          Submit Feedback
+        </button>
+        <p class="thank-you-text">Thank you for taking the time to share your feedback with us!</p>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="feature-cards">
+        <div class="feature-card">
+          <div class="feature-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Anonymous & Secure</h3>
+          <p>Your feedback is completely anonymous and securely processed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h3>Direct Impact</h3>
+          <p>Your input directly influences our product improvements.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Community Driven</h3>
+          <p>Join thousands of users helping us build better experiences.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    // Character counter
+    document.getElementById('feedback-text').addEventListener('input', function() {
+      const counter = document.getElementById('char-counter');
+      counter.textContent = this.value.length + '/500';
+    });
+  </script>
+</body>
+</html>
+

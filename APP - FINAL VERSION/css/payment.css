@@ -1,0 +1,278 @@
+.back-link {
+  color: #6B7280;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #111827;
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.payment-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment-method-card {
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payment-method-card:hover {
+  border-color: #D1D5DB;
+}
+
+.payment-method-card.selected {
+  border-color: #2563EB;
+  background-color: #EFF6FF;
+}
+
+.method-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-icon.blue {
+  background-color: #DBEAFE;
+  color: #2563EB;
+}
+
+.method-icon.pink {
+  background-color: #FCE7F3;
+  color: #EC4899;
+}
+
+.method-content {
+  flex: 1;
+}
+
+.method-content h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.method-content p {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.method-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2563EB;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card-input-wrapper {
+  position: relative;
+}
+
+.card-logos {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.card-logo {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  padding: 2px 6px;
+  background: #F3F4F6;
+  border-radius: 4px;
+}
+
+.payment-sidebar {
+  position: sticky;
+  top: 24px;
+  height: fit-content;
+}
+
+.barber-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #F9FAFB;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.barber-avatar-summary {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.barber-summary h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.barber-rating-summary {
+  color: #F59E0B;
+  font-weight: 500;
+}
+
+.rating-text {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.summary-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.summary-detail-item svg {
+  color: #6B7280;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.summary-detail-item span,
+.summary-detail-item div {
+  font-size: 14px;
+  color: #374151;
+}
+
+.detail-subtext {
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.cost-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #374151;
+}
+
+.cost-item.discount {
+  color: #10B981;
+}
+
+.cost-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 2px solid #E5E7EB;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2563EB;
+}
+
+.confirm-payment-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.payment-disclaimer {
+  font-size: 12px;
+  color: #6B7280;
+  text-align: center;
+}
+
+.security-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+  background: #F9FAFB;
+  border-radius: 12px;
+}
+
+.security-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #10B981;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-sidebar {
+    position: static;
+  }
+
+  .security-indicators {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+

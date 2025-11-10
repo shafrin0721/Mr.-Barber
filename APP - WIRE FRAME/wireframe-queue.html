@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Queue Status - Mr. Barber Wireframes</title>
+<link rel="stylesheet" href="wireframe-styles.css">
+</head>
+<body>
+
+<div class="container">
+  <nav class="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="logo">✂️ Mr. Barber</div>
+    <div class="menu">
+      <a href="wireframe-dashboard.html">Dashboard</a>
+      <a href="wireframe-book.html">Book Appointment</a>
+      <a href="wireframe-queue.html" class="active">Queue Status</a>
+      <a href="wireframe-barbers.html">Barbers</a>
+      <a href="wireframe-feedback.html">Feedback</a>
+      <a href="wireframe-payment.html">Payment</a>
+      <a href="wireframe-rewards.html">Loyalty Rewards</a>
+    </div>
+    <div class="profile">
+      John Anderson<br/>
+      <span class="email">john@email.com</span>
+    </div>
+  </nav>
+
+  <main>
+    <header>Queue Status</header>
+    <section>
+      <div style="display:flex; gap:15px; flex-wrap:wrap; margin-bottom:1.5rem;">
+        <div style="flex:1; min-width:120px; background:#e7eaf4; padding:1rem; border-radius:8px;">
+          <strong>Now Serving</strong><br/>
+          <span style="font-size: 1.5rem; color:#3a516f;">A-042</span><br/>
+          <small>Counter 3</small>
+        </div>
+        <div style="flex:1; min-width:120px; background:#e7eaf4; padding:1rem; border-radius:8px;">
+          <strong>People Waiting</strong><br/>
+          <span style="font-size: 1.5rem;">23</span><br/>
+          <small>In queue</small>
+        </div>
+        <div style="flex:1; min-width:120px; background:#e7eaf4; padding:1rem; border-radius:8px;">
+          <strong>Avg Wait Time</strong><br/>
+          <span style="font-size: 1.5rem;">12</span><br/>
+          <small>Minutes</small>
+        </div>
+      </div>
+      <div style="background:#4a5774; color:white; padding:1rem; border-radius:8px; margin-bottom:1.5rem; max-width:400px;">
+        <strong>Ready to Join?</strong><br/>
+        Click the button to get your queue number and estimated wait time.<br/>
+        <button style="margin-top:10px; padding:0.5rem 1rem;">Join Queue Now</button>
+      </div>
+      <div style="background:#e7ebf3; padding:1rem; border-radius:8px; margin-bottom:1rem;">
+        <h3>Your Position</h3>
+        <p><strong>You're #12</strong> in the queue</p>
+        <progress max="23" value="12" style="width:100%; height:12px; border-radius:6px;"></progress>
+        <p>Estimated Wait: 8 min | People Served: 3</p>
+      </div>
+      <div style="display:flex; gap:15px; flex-wrap: wrap;">
+        <div style="flex:2; background:#e7ecf5; padding:1rem; border-radius:8px;">
+          <h3>Recent Activity</h3>
+          <ul>
+            <li>#11 is now being served (2 minutes ago)</li>
+            <li>#10 service completed (4 minutes ago)</li>
+            <li>#13 joined the queue (6 minutes ago)</li>
+          </ul>
+        </div>
+        <div style="flex:1; background:#4a5774; color:white; padding:1rem; border-radius:8px;">
+          <h3>How It Works</h3>
+          <ol>
+            <li>Join the Queue</li>
+            <li>Track Position</li>
+            <li>Get Notified</li>
+            <li>Get Served</li>
+          </ol>
+        </div>
+        <div style="flex:1; background:#e7ebf3; padding:1rem; border-radius:8px;">
+          <h3>Queue Information</h3>
+          <p>Service Type: General Support</p>
+          <p>Ticket ID: #QU-2024-1247</p>
+          <p>Joined: 2:34 PM</p>
+          <div>
+            <p>Status:</p>
+            <ul>
+              <li>✓ Checked In: 2:34 PM</li>
+              <li>⏳ Waiting: In progress</li>
+              <li>👤 Being Served: Pending</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 1rem; display:flex; gap:10px;">
+        <button>Call Support</button>
+        <button style="background:#fbb6b6; border:none;">Leave Queue</button>
+        <button>Get Notified</button>
+      </div>
+    </section>
+    <footer role="contentinfo">
+      <div class="footer-section">
+        <div>
+          <h4>Mr. Barber</h4>
+          <p>Connect with the best barbers in your area and book your perfect cut.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul><li>Hair Cuts</li><li>Beard Styling</li><li>Straight Razor</li><li>Hot Towel</li></ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul><li>Help Center</li><li>Contact Us</li><li>Privacy Policy</li><li>Terms of Service</li></ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul><li>Facebook</li><li>Instagram</li><li>Twitter</li></ul>
+        </div>
+      </div>
+      <div>© 2024 Mr. Barber. All rights reserved.</div>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
+

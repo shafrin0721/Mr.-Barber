@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty Rewards - Mr. Barber</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/loyalty.css">
+</head>
+<body>
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+  <aside class="sidebar"></aside>
+  
+  <div class="main-content">
+    <div class="content-wrapper">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <div class="welcome-left">
+          <h1>Welcome Back, Sarah!</h1>
+          <p>You're just 250 points away from Gold status</p>
+          <div class="welcome-cards">
+            <div class="welcome-card">
+              <div class="welcome-card-label">Current Tier</div>
+              <div class="welcome-card-value">Silver</div>
+            </div>
+            <div class="welcome-card dark">
+              <div class="welcome-card-label">Next Reward</div>
+              <div class="welcome-card-value">50 pts</div>
+            </div>
+          </div>
+        </div>
+        <div class="welcome-right">
+          <div class="diamond-icon">◆</div>
+          <div class="points-label">Total Points</div>
+          <div class="points-value">2,750</div>
+          <button class="btn btn-purple">View History</button>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="section">
+        <h2 class="section-title">Progress to Gold Status</h2>
+        <p class="progress-subtitle">Silver (Current)</p>
+        <div class="progress-container">
+          <div class="progress-bar-large">
+            <div class="progress-fill-orange" style="width: 91.7%"></div>
+          </div>
+          <div class="progress-info">
+            <span>2,750 / 3,000 points</span>
+            <span>Gold (3,000 pts)</span>
+          </div>
+          <p class="points-remaining">250 points to go!</p>
+        </div>
+      </div>
+
+      <div class="loyalty-layout">
+        <!-- Main Content -->
+        <div class="loyalty-main">
+          <!-- Available Rewards -->
+          <div class="section">
+            <h2 class="section-title">Available Rewards</h2>
+            <div class="filter-tabs">
+              <button class="filter-tab active">All</button>
+              <button class="filter-tab">Food</button>
+              <button class="filter-tab">Discounts</button>
+              <button class="filter-tab">Experiences</button>
+            </div>
+            <div class="rewards-grid">
+              <div class="reward-card">
+                <div class="reward-image" style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);"></div>
+                <div class="reward-content">
+                  <div class="reward-badge green">500 pts</div>
+                  <h3>Free hair cut</h3>
+                  <p>Get a free hair cut</p>
+                  <button class="btn btn-green">Redeem Now</button>
+              </div>
+            </div>
+              <div class="reward-card">
+                <div class="reward-image" style="background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);"></div>
+                <div class="reward-content">
+                  <div class="reward-badge orange">300 pts</div>
+                  <h3>20% Off Next Order</h3>
+                  <p>Save 20% on your next purchase, valid for 30 days</p>
+                  <button class="btn btn-orange">Redeem Now</button>
+                </div>
+              </div>
+              <div class="reward-card">
+                <div class="reward-image" style="background: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%);"></div>
+                <div class="reward-content">
+                  <div class="reward-badge purple">1,200 pts</div>
+                  <h3>Spa Day Experience</h3>
+                  <p>Full day spa treatment including massage and facial</p>
+                  <button class="btn btn-disabled">Not Enough Points</button>
+                </div>
+              </div>
+              <div class="reward-card">
+                <div class="reward-image" style="background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);"></div>
+                <div class="reward-content">
+                  <div class="reward-badge orange">800 pts</div>
+                  <h3>Free colouring</h3>
+                  <p>One free Colouring for the highlights</p>
+                  <button class="btn btn-orange">Redeem Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="loyalty-sidebar">
+          <!-- Exclusive Offers -->
+          <div class="section">
+            <h2 class="section-title">Exclusive Offers</h2>
+            <div class="offer-card pink">
+              <div class="offer-icon">♥</div>
+              <h3>Double Points Weekend</h3>
+              <p>Earn 2x points on all purchases this weekend</p>
+              <button class="btn btn-pink">View Offers</button>
+            </div>
+            <div class="offer-card white">
+              <div class="offer-icon">🎁</div>
+              <h3>Birthday Bonus</h3>
+              <p>500 free points on your birthday</p>
+              <button class="btn btn-blue">Learn More</button>
+            </div>
+          </div>
+
+          <!-- Tier Benefits -->
+          <div class="section">
+            <h2 class="section-title">Tier Benefits</h2>
+            <div class="tier-card gray">
+              <div class="tier-icon">🥉</div>
+              <h3>Bronze (0-999 pts)</h3>
+              <p>1x points, basic rewards</p>
+            </div>
+            <div class="tier-card">
+              <div class="tier-icon">🥈</div>
+              <h3>Silver (1000-2999 pts)</h3>
+              <p>1.2x points, priority support</p>
+            </div>
+            <div class="tier-card">
+              <div class="tier-icon">🥇</div>
+              <h3>Gold (3000+ pts)</h3>
+              <p>1.5x points, exclusive rewards</p>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="section">
+            <h2 class="section-title">Quick Actions</h2>
+            <div class="quick-actions">
+              <button class="btn btn-purple full-width">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <rect x="7" y="7" width="3" height="3"></rect>
+                  <rect x="14" y="7" width="3" height="3"></rect>
+                  <rect x="7" y="14" width="3" height="3"></rect>
+                  <rect x="14" y="14" width="3" height="3"></rect>
+                </svg>
+                Scan QR to Earn Points
+              </button>
+              <button class="btn btn-outline full-width">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                  <polyline points="16 6 12 2 8 6"></polyline>
+                  <line x1="12" y1="2" x2="12" y2="15"></line>
+                </svg>
+                Refer a Friend
+              </button>
+              <button class="btn btn-outline full-width">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Points History
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
+

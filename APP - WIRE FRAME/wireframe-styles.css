@@ -1,0 +1,149 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fb;
+  color: #2f2f2f;
+}
+a {
+  color: #3b5a9e; text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Layout grid */
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+.sidebar {
+  width: 240px;
+  background-color: #4f556e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.sidebar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  display:flex; align-items:center; gap:8px;
+}
+.sidebar .menu {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+.sidebar .menu button, .sidebar .menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 5px;
+  text-align: left;
+}
+.sidebar .menu button.active, .sidebar .menu a.active {
+  background-color: #606783;
+  font-weight: 700;
+}
+.sidebar .profile {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #676f86;
+  font-size: 0.85rem;
+  color: #b6b8c9;
+}
+.sidebar .profile .email {
+  font-size: 0.8rem;
+  color: #99a1bb;
+}
+main {
+  flex-grow: 1;
+  background: white;
+  min-height: 100vh;
+  padding: 1.5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #3e444d;
+}
+footer {
+  background: #1f1f1f;
+  color: #999;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+  margin-top: auto;
+}
+footer .footer-section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+}
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-section ul li {
+  margin: 0.2rem 0;
+}
+footer .footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: white;
+}
+/* Responsive nav and footer adjustment */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+  }
+  .sidebar .logo {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  .sidebar .menu {
+    flex: 3;
+    display: flex;
+    padding: 0;
+  }
+  .sidebar .menu button, .sidebar .menu a {
+    flex: 1;
+    justify-content: center;
+    margin: 0 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+  }
+  .sidebar .profile {
+    display: none;
+  }
+  main {
+    padding: 1rem;
+  }
+  footer .footer-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+

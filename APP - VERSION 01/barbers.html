@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Barbers - Mr. Barber</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/barbers.css">
+</head>
+<body>
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+  <aside class="sidebar"></aside>
+  
+  <div class="main-content">
+    <div class="content-wrapper">
+      <!-- Header -->
+      <div class="page-header">
+        <div class="search-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" placeholder="Search barbers..." class="search-input">
+        </div>
+        <button class="btn btn-primary sign-in-btn">Sign In</button>
+      </div>
+
+      <!-- Page Title -->
+      <h1 class="page-title">Professional Barbers</h1>
+      <p class="page-subtitle">Choose from our skilled professionals and book your perfect cut</p>
+
+      <!-- Filters -->
+      <div class="filters">
+        <select class="filter-select">
+          <option>All Specialties</option>
+          <option>Classic Cuts</option>
+          <option>Beard Styling</option>
+          <option>Fade Expert</option>
+        </select>
+        <select class="filter-select">
+          <option>All Ratings</option>
+          <option>4.5+ Stars</option>
+          <option>4.0+ Stars</option>
+          <option>3.5+ Stars</option>
+        </select>
+      </div>
+
+      <!-- Barber Cards Grid -->
+      <div class="barbers-grid">
+        <!-- Barber Card 1 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">MJ</div>
+            <span class="availability-badge available">Available</span>
+          </div>
+          <h3 class="barber-name">Marcus Johnson</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 4.9 <span class="reviews">(127)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-yellow">Classic Cuts</span>
+            <span class="tag tag-blue">Beard Styling</span>
+            <span class="tag tag-purple">Fade Expert</span>
+          </div>
+          <p class="barber-description">Experienced barber specializing in classic cuts and modern fades. Known for attention to detail and customer satisfaction.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>30-45 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$35-65</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Downtown Location</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-primary">Book Now</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Barber Card 2 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">SC</div>
+            <span class="availability-badge busy">Busy</span>
+          </div>
+          <h3 class="barber-name">Sarah Chen</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 4.8 <span class="reviews">(98)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-pink">Modern Styles</span>
+            <span class="tag tag-green">Color Expert</span>
+            <span class="tag tag-orange">Trendsetter</span>
+          </div>
+          <p class="barber-description">Creative stylist with expertise in modern cuts and color techniques. Always up-to-date with the latest trends.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>45-60 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$40-80</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Midtown Studio</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-primary">Book Now</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Barber Card 3 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">TR</div>
+            <span class="availability-badge available">Available</span>
+          </div>
+          <h3 class="barber-name">Tony Rodriguez</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 4.9 <span class="reviews">(156)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-red">Straight Razor</span>
+            <span class="tag tag-brown">Traditional</span>
+            <span class="tag tag-teal">Hot Towel</span>
+          </div>
+          <p class="barber-description">Master barber specializing in traditional straight razor shaves and classic grooming services.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>60-75 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$50-90</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Heritage Barbershop</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-primary">Book Now</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Barber Card 4 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">AK</div>
+            <span class="availability-badge available">Available</span>
+          </div>
+          <h3 class="barber-name">Alex Kim</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 4.7 <span class="reviews">(89)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-yellow">Undercuts</span>
+            <span class="tag tag-purple">Pompadours</span>
+            <span class="tag tag-blue">Texture</span>
+          </div>
+          <p class="barber-description">Specializes in modern undercuts and textured styles. Expert in creating bold, statement looks.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>40-55 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$45-75</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Urban Cut Lounge</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-primary">Book Now</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Barber Card 5 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">IM</div>
+            <span class="availability-badge booked">Booked</span>
+          </div>
+          <h3 class="barber-name">Isabella Martinez</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 4.8 <span class="reviews">(112)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-purple">Precision Cuts</span>
+            <span class="tag tag-pink">Styling</span>
+            <span class="tag tag-blue">Consultations</span>
+          </div>
+          <p class="barber-description">Precision-focused stylist offering detailed consultations and personalized styling services.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>35-50 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$38-68</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Elite Hair Studio</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-disabled">Fully Booked</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Barber Card 6 -->
+        <div class="barber-card">
+          <div class="barber-image-container">
+            <div class="barber-image">FW</div>
+            <span class="availability-badge available">Available</span>
+          </div>
+          <h3 class="barber-name">Frank Williams</h3>
+          <div class="barber-rating">
+            <span class="star">★</span> 5.0 <span class="reviews">(203)</span>
+          </div>
+          <div class="specialty-tags">
+            <span class="tag tag-gold">Master Barber</span>
+            <span class="tag tag-brown">30+ Years</span>
+            <span class="tag tag-blue">Mentorship</span>
+          </div>
+          <p class="barber-description">Veteran barber with over 30 years of experience. Specializes in classic cuts and mentoring new barbers.</p>
+          <div class="barber-details">
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>45-60 min</span>
+            </div>
+            <div class="detail-item">
+              <span>$</span>
+              <span>$55-85</span>
+            </div>
+            <div class="detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Classic Barber Co.</span>
+            </div>
+          </div>
+          <div class="barber-actions">
+            <button class="btn btn-primary">Book Now</button>
+            <button class="btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button class="btn btn-outline load-more-btn">Load More Barbers</button>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
+

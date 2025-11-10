@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard - Mr. Barber Wireframes</title>
+<link rel="stylesheet" href="wireframe-styles.css">
+</head>
+<body>
+
+<div class="container">
+  <nav class="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="logo">✂️ Mr. Barber</div>
+    <div class="menu">
+      <a href="wireframe-dashboard.html" class="active">Dashboard</a>
+      <a href="wireframe-book.html">Book Appointment</a>
+      <a href="wireframe-queue.html">Queue Status</a>
+      <a href="wireframe-barbers.html">Barbers</a>
+      <a href="wireframe-feedback.html">Feedback</a>
+      <a href="wireframe-payment.html">Payment</a>
+      <a href="wireframe-rewards.html">Loyalty Rewards</a>
+    </div>
+    <div class="profile">
+      John Anderson<br/>
+      <span class="email">john@email.com</span>
+    </div>
+  </nav>
+
+  <main>
+    <header>Welcome back, John!</header>
+    <section>
+      <h2>Quick Actions</h2>
+      <div style="display:flex; flex-wrap: wrap; gap:15px; margin-bottom:2rem;">
+        <button style="flex:1; min-width:140px; padding:1rem; border-radius:8px; background:#e8ebf8; font-weight:600;">Book Appointment</button>
+        <button style="flex:1; min-width:140px; padding:1rem; border-radius:8px; background:#e6f6e7; font-weight:600;">Join Walk-In Queue</button>
+        <button style="flex:1; min-width:140px; padding:1rem; border-radius:8px; background:#f0e9f9; font-weight:600;">Loyalty Rewards</button>
+      </div>
+      <div style="display:flex; justify-content:space-between; gap:1rem; flex-wrap: wrap;">
+        <div style="flex:1; min-width:280px; background:#f1f4f9; padding:1rem; border-radius:8px;">
+          <h3>Upcoming Appointments</h3>
+          <ul>
+            <li>Haircut & Styling – Tomorrow, 2:00 PM (Confirmed)</li>
+            <li>Facial Treatment – Friday, 10:30 AM (Pending)</li>
+          </ul>
+        </div>
+        <div style="flex:1; min-width:280px; background:#f1f4f9; padding:1rem; border-radius:8px;">
+          <h3>Current Queue Status</h3>
+          <p>You're #3 in line</p>
+          <p>Estimated wait time: 15-20 minutes</p>
+          <progress max="8" value="3" style="width:100%;"></progress>
+        </div>
+        <div style="flex:1; min-width:280px; background:#f1f4f9; padding:1rem; border-radius:8px;">
+          <h3>Notifications</h3>
+          <ul style="font-size:0.9rem;">
+            <li>Appointment confirmed for tomorrow</li>
+            <li>You earned 50 loyalty points!</li>
+            <li>Special offer: 20% off next booking</li>
+          </ul>
+          <h3>Loyalty Status</h3>
+          <p>Gold Member – 1250 points</p>
+          <p>Progress to Platinum: 250 points to go</p>
+          <button>View Rewards</button>
+          <h3>Recent Activity</h3>
+          <ul style="font-size:0.9rem;">
+            <li>Completed haircut appointment</li>
+            <li>Booked facial treatment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer role="contentinfo">
+      <div class="footer-section">
+        <div>
+          <h4>Mr. Barber</h4>
+          <p>Connect with the best barbers in your area and book your perfect cut.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul><li>Hair Cuts</li><li>Beard Styling</li><li>Straight Razor</li><li>Hot Towel</li></ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul><li>Help Center</li><li>Contact Us</li><li>Privacy Policy</li><li>Terms of Service</li></ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul><li>Facebook</li><li>Instagram</li><li>Twitter</li></ul>
+        </div>
+      </div>
+      <div>© 2024 Mr. Barber. All rights reserved.</div>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
+
